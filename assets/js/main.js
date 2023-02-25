@@ -21,6 +21,15 @@ const  scrollHeader = () => {
 window.addEventListener("scroll", scrollHeader);
 
 // Open menu & search pop-up
+const menuToggleIcon = selectElement('#menu-toggle-icon');
+
+const toggleMenu = () => {
+    const mobileMenu = selectElement("#menu");
+    mobileMenu.classList.toggle('activated');
+    menuToggleIcon.classList.toggle("activated");
+};
+
+menuToggleIcon.addEventListener("click", toggleMenu);
 
 // Open/Close Search form pop-up
 
