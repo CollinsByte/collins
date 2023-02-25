@@ -130,8 +130,8 @@ body.light-theme {
     width: 23rem;
     padding: 1.5rem;
     background-color: var(--secondary-background-color);
-    /* opacity: 0;
-    transform: scale(0); */
+    opacity: 0;
+    transform: scale(0);
     transition: opacity .25s ease-in;
 }
 
@@ -205,8 +205,8 @@ body.light-theme {
     left: 0;
     z-index: 9999;
     display: flex;
-    /* opacity: 0;
-    transform: scale(0); */
+    opacity: 0;
+    transform: scale(0);
     transition: opacity .5s;
 }
 
@@ -257,6 +257,10 @@ body.light-theme {
 }
 
 /* Form Javascript styles */
+.search-form-container .activated {
+    opacity: 1;
+    transform: scale(1);
+}
 
 /* Featured articles */
 
