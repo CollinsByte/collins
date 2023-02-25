@@ -16,7 +16,9 @@ const  scrollHeader = () => {
     } else {
         headerElement.classList.remove('activated');
     }
-}
+};
+
+window.addEventListener("scroll", scrollHeader);
 
 // Open menu & search pop-up
 
