@@ -36,5 +36,11 @@ menuToggleIcon.addEventListener("click", toggleMenu);
 // -- Close the search form pop-up on ESC keypress
 
 // Switch theme/add to local storage
+const bodyElement = document.body;
+const themeToggleBtn = selectElement("#theme-toggle-btn");
+
+themeToggleBtn.addEventListener("click", () => {
+    bodyElement.classList.toggle("light-theme");
+});
 
 // Swiper
