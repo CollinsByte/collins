@@ -298,15 +298,17 @@ body.light-theme {
 }
 
 .headline {
+    background-color: #000000;
     color: var(--light-color);
     font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
-    padding: .4rem;
+    letter-spacing: 1px;
+    padding: 4px;
     height: 100%;
 }
 
-.headline span {
+.headline span{
     height: inherit;
 }
 
@@ -316,7 +318,7 @@ body.light-theme {
 }
 
 .fancy-border::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -333,6 +335,7 @@ body.light-theme {
     display: inline-flex;
     padding: .6rem 1.5rem;
     background-color: var(--secondary-background-color);
+    padding: .6rem 1.5rem;
 }
 
 .article {
@@ -418,7 +421,7 @@ body.light-theme {
     flex-direction: column;
     gap: var(--gap);
     padding-block: 2rem;
-    border: 1px solid --transparent-light-color;
+    border-bottom: 1px solid --transparent-light-color;
 }
 
 .more-articles:last-of-type {
