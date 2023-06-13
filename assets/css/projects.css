@@ -52,3 +52,11 @@ h1 {
     color: var(--accent);
     margin-bottom: 4px;
 }
+
+small {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 4px;
+}
