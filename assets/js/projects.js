@@ -50,3 +50,22 @@ const displayProfile = (profile) => {
         </div>
     `;
 };
+
+// get list of public user's repos
+const getRepos = async () => {
+    let repos = [];
+    let response;
+    for (let i = 1; i <= maxPages; i++) {
+        response = await fetch(
+            `https://api.github.com/users/${username}/repos?sort=pushed&per_page=100&pages=${1}`
+        );
+        let data = await response.json();
+        repos = repos.concat(data);
+        console.log(data);
+    }
+    repos.sort((a, b) => b.forks_count - a.forks_count);
+    repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+    console.log(repos);
+};
+
+getRepos();
