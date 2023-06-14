@@ -69,3 +69,26 @@ const getRepos = async () => {
 };
 
 getRepos();
+
+
+// display list of all user's public repos
+const displayRepos = (repos) => {
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
