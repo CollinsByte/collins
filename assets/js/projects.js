@@ -15,4 +15,16 @@ const repoList = selectElement('.repo-list');
 const repoSection = selectElement('.repos');
 const filterInput = selectElement('.filter-repos');
 
-console.log(filterInput);
+
+// get information from github profile
+const getProfile = async() => {
+    const response = await fetch(
+        `https://api.github.com/users/${username}`
+    );
+    console.log(`awaiting the response from the fetch request`);
+    const profile = await response.json();
+    console.log(profile);
+};
+
+
+getProfile();
