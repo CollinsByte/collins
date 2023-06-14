@@ -61,7 +61,6 @@ const getRepos = async () => {
         );
         let data = await response.json();
         repos = repos.concat(data);
-        console.log(data);
     }
     repos.sort((a, b) => b.forks_count - a.forks_count);
     repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
@@ -73,9 +72,51 @@ getRepos();
 
 // display list of all user's public repos
 const displayRepos = (repos) => {
+    const userHome = `https://github.com/${username}`
+    filterInput.classList.remove('hide');
 
+    for (const repo of repos) {
+        if (repo.fork && hideForks) {
+            continue;   // move to the next iteration 
+        }
+
+
+        const langUrl = `${userHome}?tab=repositories&1=&language=${repo.language}`;
+        const starsUrl = `${userHome}/${repo.name}/stargazers`;
+        const forksUrl = `${userHome}/${repo.name}/network/members`;
+
+
+        let listItem = document.createElement('li');
+        listItem.classList.add('repo');
+        listItem.innerHTML = `
+            <h3>${repo.name}</h3>
+            <span>${repo.description}</span>
+            <br/><br/> `
+
+
+        if (repo.stargazer_count > 0) {
+        
+        }
+
+        if (repo.language) {
+
+        }
+
+        if (repo.forks_count > 0) {
+
+        }
+
+        if (repo.homepage && repo.homepage !== "") {
+
+        } else {
+
+        }
+
+
+        repoList.append(listItem);
+
+    }
 };
-
 
 
 
