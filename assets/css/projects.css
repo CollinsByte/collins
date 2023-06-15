@@ -83,3 +83,52 @@ a {
 a:hover {
     color: var(--text);
 }
+
+
+.github-img {
+    width: 45px;
+    margin-right: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--bg-user);
+    color: var(--text);
+    font-size: 18px;
+    padding: 2em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.user-info figure {
+    width: 99%;
+    max-width: 200px;
+}
+
+.user-info img {
+    border-radius: 100%;
+}
+
+.user-info div {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.user-info div p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 18px;
+}
