@@ -95,26 +95,30 @@ const displayRepos = (repos) => {
 
 
         if (repo.stargazer_count > 0) {
-        
+            listItem.innerHTML += `<a href="${startsUrl}">
+            <span> ${repo.stargazers_count}</span></a>`        
         }
 
         if (repo.language) {
-
+            listItem.innerHTML += `<a href="${langUrl}">
+            <span> ${devicons[repo.language]}</span></a>`        
         }
 
         if (repo.forks_count > 0) {
-
+            listItem.innerHTML += `<a href="${starsUrl}">
+            <span>${devicons["Git"]} ${repo.forks_count}</span></a>`        
         }
 
         if (repo.homepage && repo.homepage !== "") {
-
+            listItem.innerHTML += `<br /> <br />
+            <a class="link-btn" href=${repo.html_url}>Code ${devicons["Github"]}</a>
+            <a class="link-btn" href=${repo.homepage}>Live ${devicons["Chrome"]}</a> <br />`;
         } else {
-
+            listItem.innerHTML += `<br /> <br />
+            <a class="link-btn" href=${repo.html_url}>View Project ${devicons["Github"]}</a><br />`;
         }
 
-
         repoList.append(listItem);
-
     }
 };
 
