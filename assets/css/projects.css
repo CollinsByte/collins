@@ -132,3 +132,17 @@ ul {
     border-bottom: 1px solid var(--text);
     padding-bottom: 18px;
 }
+
+.filter-repos, 
+input {
+    background-color: var(--bg-user);
+    width: 50%;
+    border-radius: 20px;
+    min-width: 300px;
+    margin-top: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    border:2px solid var(--accent);
+    color: var(--text);
+    text-align: center;
+}
