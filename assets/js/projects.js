@@ -126,10 +126,10 @@ const displayRepos = (repos) => {
 // dynamic search
 filterInput.addEventListener('input', (e) => {
     const search = e.target.value;
-    const repos = selectElement('.repo');
+    const repos = document.querySelectorAll('.repo');
     const searchLowerText = search.toLowerCase();
 
-    for (const repo for repos) {
+    for (const repo of repos) {
         const lowerText = repo.innerText.toLowerCase();
         if (lowerText.includes(searchLowerText)) {
             repo.classList.remove('hide');
