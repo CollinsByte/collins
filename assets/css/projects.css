@@ -146,3 +146,15 @@ input {
     color: var(--text);
     text-align: center;
 }
+
+.repos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--bg-repo);
+    margin-top: 0;
+    padding: 2em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 4em;
+}
