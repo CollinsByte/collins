@@ -124,8 +124,20 @@ const displayRepos = (repos) => {
 
 
 // dynamic search
+filterInput.addEventListener('input', (e) => {
+    const search = e.target.value;
+    const repos = selectElement('.repo');
+    const searchLowerText = search.toLowerCase();
 
-
+    for (const repo for repos) {
+        const lowerText = repo.innerText.toLowerCase();
+        if (lowerText.includes(searchLowerText)) {
+            repo.classList.remove('hide');
+        } else {
+            repo.classList.add('hide');
+        }
+    }
+});
 
 
 
