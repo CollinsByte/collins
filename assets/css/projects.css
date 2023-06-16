@@ -70,7 +70,7 @@ h2 {
 
 img {
     border: 2px solid var(--accent);
-    box-shadow: 0 0px 0px var(--accent), 0 0px 0px var(--accent);
+    box-shadow: 0 0px 6px var(--accent), 0 0px 6px var(--accent);
     max-width: 100%;
     height: auto;
 }
@@ -108,7 +108,7 @@ ul {
 }
 
 .user-info figure {
-    width: 99%;
+    width: 90%;
     max-width: 200px;
 }
 
