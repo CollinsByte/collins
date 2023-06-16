@@ -9,7 +9,7 @@ const selectElement = (selector) => {
 };
 
 const username = 'paradigm-lab';
-const maxPages = 2;
+const maxPages = 1;
 const hideForks = true;
 const repoList = selectElement('.repo-list');
 const repoSection = selectElement('.repos');
@@ -57,7 +57,7 @@ const getRepos = async () => {
     let response;
     for (let i = 1; i <= maxPages; i++) {
         response = await fetch(
-            `https://api.github.com/users/${username}/repos?sort=pushed&per_page=100&pages=${1}`
+            `https://api.github.com/users/${username}/repos?sort=pushed&per_page=100&pages=${i}`
         );
         let data = await response.json();
         repos = repos.concat(data);
