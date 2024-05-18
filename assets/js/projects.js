@@ -8,7 +8,7 @@ const selectElement = (selector) => {
     throw new Error(`Something went wrong, make sure that ${selector} exists or is typed correctly.`);
 };
 
-const username = 'paradigm-lab';
+const username = 'TheOddagen';
 const maxPages = 1;
 const hideForks = true;
 const repoList = selectElement('.repo-list');
