@@ -100,6 +100,8 @@ nav li a:hover {
 
 .container {
     display: flex;
+    margin: 0 auto;
+    padding: 20px;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -271,6 +273,36 @@ h3 {
     padding: 0em 0.5em;
     margin: 0.5em 0;
 }
+
+/***************************************
+ * *************************************
+ *********** FOOTER START **************
+ ***************************************
+ **************************************/
+
+footer {
+    display: grid;
+    place-items: center;
+    height: 100px;
+}
+
+h4 {
+    margin: 0;
+}
+
+h4 a {
+    text-decoration: none;
+}
+
+footer h4 {
+    padding: 10px;
+}
+
+/***************************************
+ * *************************************
+ *********** FOOTER END **************
+ ***************************************
+ **************************************/
 
 @media (min-width: 700px) {
     .user-info div {
