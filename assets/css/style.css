@@ -145,11 +145,11 @@ nav li a:hover {
 
 /***************************************
  * *************************************
- ******** MAIN SECTION START ***********
+ ****** PROJECTS CONTAINER START *******
  ***************************************
  **************************************/
 
-.container {
+.projects-container {
     padding: 20px;
     display: flex;
     margin: 0 auto;
@@ -161,6 +161,24 @@ nav li a:hover {
     max-width: 1280px;
 }
 
+.projects-container h1 {
+    color: #333;
+    margin: 1rem 0;
+}
+
+.projects-container p.intro {
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px; /* Optional: Limits the width of the intro text */
+}
+
+/***************************************
+ * *************************************
+ ******* PROJECTS CONTAINER END ********
+ ***************************************
+ **************************************/
+
 .profile-picture {
     display: block;
     margin: 0 auto;
@@ -168,18 +186,6 @@ nav li a:hover {
     height: 150px;
     border-radius: 50%;
     border: 3px solid #e1e1e1;
-}
-
-.container h1 {
-    color: #333;
-    margin: 1rem 0;
-}
-
-.container p.intro {
-    color: #555;
-    line-height: 1.6;
-    margin: 0 auto;
-    max-width: 600px; /* Optional: Limits the width of the intro text */
 }
 
 /* Images Section */
@@ -234,12 +240,6 @@ nav li a:hover {
 .job {
     margin-bottom: 1rem;
 }
-
-/***************************************
- * *************************************
- ******** MAIN SECTION START ***********
- ***************************************
- **************************************/
 
 .hide {
     /* '!important' is to make sure that when we add the class using JS, it takes precendence */
