@@ -33,11 +33,26 @@ body {
     font-size: 16px;
 }
 
-
+/***************************************
+ * *************************************
+ *********** HEADER START **************
+ ***************************************
+ **************************************/
 header {
     display: flex;
-    justify-content: center;
-    padding: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+}
+
+.header-left {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.header-right {
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 nav {
@@ -45,7 +60,7 @@ nav {
     justify-content: center;
     border-radius: 9999px;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 0 12px;
+    padding: 0px 0px 0px 0px;
     font-size: 0.875rem;
     font-weight: 500;
     color: #374151;
@@ -56,16 +71,18 @@ nav {
 
 nav li {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav li:last-child {
     margin-right: 0;
+    margin-left: 0;
 }
 
 nav li a {
     display: block;
-    padding: 8px 16px;
+    padding: 10px 10px 10px 10px;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -74,6 +91,12 @@ nav li a:hover {
     color: #22d3ee;
 }
 
+
+/***************************************
+ * *************************************
+ *********** HEADER END **************
+ ***************************************
+ **************************************/
 
 .container {
     display: flex;
