@@ -98,10 +98,61 @@ nav li a:hover {
  ***************************************
  **************************************/
 
+
+/***************************************
+ * *************************************
+ ***** SOCIAL-MEDIA LINKS STARTS *******
+ ***************************************
+ **************************************/
+
+.container .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #e1e1e1;
+}
+
+.social-links svg {
+    fill: #333;
+    transition: fill 0.3s ease;
+}
+
+.social-links a:hover svg {
+    fill: #007BFF;
+}
+
+/***************************************
+ * *************************************
+ ******** SOCIAL-MEDIA LINKS END *******
+ ***************************************
+ **************************************/
+
+
+/***************************************
+ * *************************************
+ ******** MAIN SECTION START ***********
+ ***************************************
+ **************************************/
+
 .container {
+    padding: 20px;
     display: flex;
     margin: 0 auto;
-    padding: 20px;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -109,6 +160,86 @@ nav li a:hover {
     width: 90%;
     max-width: 1280px;
 }
+
+.profile-picture {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #e1e1e1;
+}
+
+.container h1 {
+    color: #333;
+    margin: 1rem 0;
+}
+
+.container p.intro {
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px; /* Optional: Limits the width of the intro text */
+}
+
+/* Images Section */
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers images horizontally */
+    gap: 1rem; /* Adds space between images */
+}
+
+.image-section img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 8px; /* Optional: Adds rounded corners to images */
+}
+
+/* Articles and Subscription Sections */
+.articles-section, .subscription-section, .work-experience-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.articles-section {
+    width: 60%;
+    float: left; /* Floats articles section to the left */
+}
+
+.subscription-section {
+    width: 35%;
+    float: right; /* Floats subscription section to the right */
+}
+
+.subscription-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.subscription-section button {
+    align-self: flex-start; /* Aligns button to the start of the form */
+}
+
+/* Work Experience Section */
+.work-experience-section {
+    width: 50%;
+    float: right; /* Floats work experience section to the right */
+}
+
+.job {
+    margin-bottom: 1rem;
+}
+
+/***************************************
+ * *************************************
+ ******** MAIN SECTION START ***********
+ ***************************************
+ **************************************/
 
 .hide {
     /* '!important' is to make sure that when we add the class using JS, it takes precendence */
