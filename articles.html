@@ -15,12 +15,30 @@
     <body>
 
         <header>
-            <nav>
+            <!-- Left Section with Profile Picture -->
+            <div class="header-left">
+                <a href="./index.html">
+                    <img src="./assets/images/favicon.ico" alt="Collins SWE">
+                </a>
+            </div>
+
+            <!-- Center Section with Navigation Bar -->
+            <nav class="header-center">
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./articles.html">Articles</a></li>
                 <li><a href="./projects.html">Projects</a></li>
                 <li><a href="./uses.html">Uses</a></li>
             </nav>
+
+            <!-- Right Light/Dark Mode Toggle -->
+            <div class="header-right">
+                <button id="theme-toggle" class="w-10 h-10 flex items-center justify-center rounded-full text-zinc-800 dark:text-zinc-200 bg-transparent border border-transparent hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
+                        <path fill-rule="evenodd" d="M12 2C6.485 2 2 6.485 2 12s4.485 10 10 10 10-4.485 10-10S17.515 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        <path d="M12 5.25a6.75 6.75 0 0 0 0 13.5v-13.5z"/>
+                    </svg>
+                </button>
+            </div>
         </header>
 
         <main class="container">
